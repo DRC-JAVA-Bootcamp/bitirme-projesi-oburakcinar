@@ -27,9 +27,11 @@ public abstract class Recipe {
     private int prepDuration;
 
     @Column
+    @ElementCollection
     private List<String> ingredients;
 
     @Column
+    @ElementCollection
     private List<String> prepSteps;
 
     @Column
@@ -41,4 +43,9 @@ public abstract class Recipe {
 
     @Column
     private double rating;
+
+
+    @ManyToOne
+    @JoinColumn(name = "member_id")
+    private Member member;
 }

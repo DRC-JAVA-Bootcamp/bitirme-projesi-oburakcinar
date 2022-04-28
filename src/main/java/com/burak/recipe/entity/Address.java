@@ -1,5 +1,6 @@
 package com.burak.recipe.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -26,8 +27,9 @@ public class Address {
     @Column(name = "zip_code")
     private Long zipCode;
 
+    @JsonIgnore
     @OneToOne(mappedBy="address",
             cascade= {CascadeType.DETACH, CascadeType.MERGE,
-                    CascadeType.PERSIST, CascadeType.REFRESH})
+                    CascadeType.PERSIST, CascadeType.REFRESH}, fetch = FetchType.LAZY)
     private Member member;
 }
