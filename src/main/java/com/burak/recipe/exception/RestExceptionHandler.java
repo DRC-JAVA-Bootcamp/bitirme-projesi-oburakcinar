@@ -37,7 +37,7 @@ public class RestExceptionHandler {
                 System.currentTimeMillis());
         return new ResponseEntity<>(error, HttpStatus.CONFLICT);
     }
-
+    
     //handling all other exceptions
     @ExceptionHandler
     public ResponseEntity<ErrorResponse> handleException(Exception exc) {
