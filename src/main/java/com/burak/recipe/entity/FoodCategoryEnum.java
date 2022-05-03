@@ -1,5 +1,5 @@
 package com.burak.recipe.entity;
 
-public enum FoodTypeEnum {
+public enum FoodCategoryEnum {
     BREAKFAST, LUNCH, DINNER, SOUP, APPETIZER, SALAD, DESSERT
 }

@@ -1,5 +1,6 @@
 package com.burak.recipe.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -16,8 +17,8 @@ public class Recipe {
     @Column
     private Long id;
 
-    @Column(name = "food_type")
-    private FoodTypeEnum foodType;
+    @Column(name = "food_category")
+    private FoodCategoryEnum foodCategory;
 
     @Column
     private String name;
@@ -47,6 +48,7 @@ public class Recipe {
     private double rating;
 
 
+    @JsonIgnore
     @ManyToOne
     @JoinColumn(name = "member_id")
     private Member member;
