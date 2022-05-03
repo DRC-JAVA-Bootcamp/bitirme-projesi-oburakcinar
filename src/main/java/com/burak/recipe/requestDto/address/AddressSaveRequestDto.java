@@ -1,4 +1,4 @@
-package com.burak.recipe.requestDto;
+package com.burak.recipe.requestDto.address;
 
 import lombok.Data;
 

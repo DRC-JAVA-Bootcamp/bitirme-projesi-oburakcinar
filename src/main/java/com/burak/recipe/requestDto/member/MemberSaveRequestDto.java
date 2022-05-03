@@ -1,4 +1,4 @@
-package com.burak.recipe.requestDto;
+package com.burak.recipe.requestDto.member;
 
 import com.burak.recipe.entity.Address;
 import lombok.Data;
