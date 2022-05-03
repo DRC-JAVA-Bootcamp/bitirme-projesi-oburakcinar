@@ -1,6 +1,6 @@
 package com.burak.recipe.responseDto.recipe;
 
-import com.burak.recipe.entity.FoodTypeEnum;
+import com.burak.recipe.entity.FoodCategoryEnum;
 import lombok.Data;
 import java.time.LocalDateTime;
 import java.util.List;
@@ -12,7 +12,7 @@ public class RecipeGetResponseDto {
 
     private long memberId;
 
-    private FoodTypeEnum foodType;
+    private FoodCategoryEnum foodCategory;
 
     private String name;
 
