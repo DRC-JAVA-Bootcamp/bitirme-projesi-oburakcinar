@@ -1,7 +1,6 @@
 package com.burak.recipe.requestDto.recipe;
 
-import com.burak.recipe.entity.FoodTypeEnum;
-import com.burak.recipe.validation.FoodType;
+import com.burak.recipe.validation.FoodCategory;
 import lombok.Data;
 
 import javax.validation.constraints.NotEmpty;
@@ -14,8 +13,8 @@ public class RecipeSaveRequestDto {
     @NotEmpty(message = "name field cannot be empty")
     private String name;
 
-    @FoodType //custom validation
-    private String foodType;
+    @FoodCategory //custom validation
+    private String foodCategory;
 
     @Positive(message = "duration must be a positive number")
     private int prepDuration;
