@@ -1,4 +1,4 @@
-package com.burak.recipe.responseDto;
+package com.burak.recipe.responseDto.member;
 
 import lombok.Data;
 
