@@ -7,15 +7,17 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 @Entity
-@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
-@DiscriminatorColumn(name = "food_type")
+@Table
 @Data
-public abstract class Recipe {
+public class Recipe {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column
     private Long id;
+
+    @Column(name = "food_type")
+    private FoodTypeEnum foodType;
 
     @Column
     private String name;

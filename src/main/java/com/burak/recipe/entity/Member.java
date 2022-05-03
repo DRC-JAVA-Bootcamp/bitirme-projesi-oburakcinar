@@ -1,6 +1,7 @@
 package com.burak.recipe.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import lombok.Builder;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -31,7 +32,7 @@ public class Member {
     @Column(name = "birth_date")
     private LocalDate birthDate;
 
-    @OneToOne(cascade=CascadeType.ALL)
+    @OneToOne(fetch=FetchType.EAGER, cascade = CascadeType.ALL)
     @JoinColumn(name="member_address_id")
     private Address address;
 
