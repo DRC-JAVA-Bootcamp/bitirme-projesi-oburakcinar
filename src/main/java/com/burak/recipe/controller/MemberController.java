@@ -2,10 +2,10 @@ package com.burak.recipe.controller;
 
 import com.burak.recipe.entity.Member;
 import com.burak.recipe.exception.BadRequestException;
-import com.burak.recipe.requestDto.AddressSaveRequestDto;
-import com.burak.recipe.requestDto.MemberSaveRequestDto;
-import com.burak.recipe.responseDto.MemberDeleteResponseDto;
-import com.burak.recipe.responseDto.MemberSaveResponseDto;
+import com.burak.recipe.requestDto.address.AddressSaveRequestDto;
+import com.burak.recipe.requestDto.member.MemberSaveRequestDto;
+import com.burak.recipe.responseDto.member.MemberDeleteResponseDto;
+import com.burak.recipe.responseDto.member.MemberSaveResponseDto;
 import com.burak.recipe.service.MemberService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
